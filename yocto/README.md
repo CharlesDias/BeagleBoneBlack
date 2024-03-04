@@ -1,5 +1,28 @@
 # BeagleBone Black
 
+## Yocto Project Quick Build
+
+See link: https://docs.yoctoproject.org/brief-yoctoprojectqs/index.html#yocto-project-quick-build
+
+1. Requirements
+
+- At least 90 Gbytes of free disk space.
+- At least 8 Gbytes of RAM (I recommend to add 16GB of swap).
+- Git 1.8.3.1 or greater; tar 1.28 or greater; Python 3.8.0 or greater; gcc 8.0 or greater; GNU make 4.0 or greater
+
+2. Install essential host packages on your build host
+
+```console
+$ sudo apt install gawk wget git diffstat unzip texinfo gcc build-essential chrpath socat cpio python3 python3-pip python3-pexpect xz-utils debianutils iputils-ping python3-git python3-jinja2 libegl1-mesa libsdl1.2-dev python3-subunit mesa-common-dev zstd liblz4-tool file locales libacl1
+$ sudo locale-gen en_US.UTF-8
+```
+
+3. Clone Poky
+
+```console
+$ git clone -b kirkstone git://git.yoctoproject.org/poky
+```
+
 ## Bitbake commands
 
 List of general BitBake commands:
